@@ -5,29 +5,21 @@
  Esteban Cruz D.
 ---
  3 AHA moments:
- - ">" are referred to as carrots.
-
-
- - "cd" stands for "change directory"
-
-  
--  My Desktop is saved in OneDrive
+ - "md" stands for mark down
+ - Paradigm is a style or way of programming
+ - ";" is used to conclude lines in JavaScript
   ---  
  2 things that are still unclear:
 
  
--  is there a way to see a live preview while coding with Git
-
-- how to better use the terminal
+-  How to commit my code (i know how to do it, but it is not 100% clear of how it works yet)
+-  is there a way to have a kind of "auto save" for github? i uderstand why for group projects it would be a bad idea, I"m just curious.
   ---
 
  1 Word for how you're feeling
  
-- excited 👽
+- Sleepy 👽
 
 ---
 
-My favorite sandwich right now is crispy chicken sandwich:
 
-
-![Crispy Chicken Sandwich](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4DlZzabbH-k8EAOj5FDIVNeJui2UmzE_OmQ&s)
