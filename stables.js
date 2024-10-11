@@ -54,6 +54,36 @@ if( horseName === "Galapagos" && horseAge === 5){
 
 let isHorseInside = true;
 if (horseName === "Galapagos" && isHorseInside !== false){
-    console.log("Galapagos is inside because he is afraid of the rain")
-} else {console.log(`the horse outside is not ${horseName} `)}
+    console.log("Galapagos is inside because he is afraid of the rain")}
+     else {console.log(`the horse  outside is not ${horseName} `)}
 
+
+
+     // lesson6
+
+     //let word = "Minion"
+     //console.log(word.charAt(3));
+     //console.log(word.length);
+
+     let horseNames =  ["Galapagos", "Aguacate", "ElLoco"];
+     let horseAges = [5, 6, 8];
+     let horseLocations = [true, false, false];
+     console.log(horseNames.length);
+     horseNames.push("Andres")
+     console.log(horseNames);
+     console.log(horseNames[2])
+     horseAges.push(23)
+     console.log(horseAges)
+     console.log(`oh no,  ${horseNames[3]} has ran away and he is only ${horseAges[3]} years old...`)
+
+    //lab-6
+    console.log(`
+        There are ${horseNames.length} horses in the stables. We have ${horseNames[0]}, he was named after the Galapagos islands. 
+        ${horseNames[1]} is very chill, kind of lazy sometimes.
+        ${horseNames[2]}... he's a very peculiar individual. In Spanish, ${horseNames[2]} means "the crazy one" and the name fits him perfectly.
+        Last but not least, ${horseNames[3]} was named after my brother, to piss him off... :)`)
+
+        if (isHorseInside === true ) 
+            {console.log(`All the horses are currently inside, probably eating`)} 
+        else{console.log("I have no idea where the horses are :(")}
+    

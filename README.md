@@ -23,3 +23,19 @@
 ---
 
 
+Lab 6
+
+3 things I am confused about:
+ 1. If i have an array within an array... to target it, is it " ${horseNames[1[2]]} "?
+ 2. I'd like to lean more about how to format my code in the most readable way possible
+ 3. Does "====" exist?
+
+
+ 3 things i have a solid understanding of:
+ 1. how booleans work
+ 2. How to use "else" and "if"
+ 
+
+
+
+
