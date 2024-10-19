@@ -126,3 +126,4 @@ function payMe(rent, discount) {
    
     console.log(locationGalapagos)
 
+    console.log("Hello world, this is me tring to see if i set up git right in the new laptop")
