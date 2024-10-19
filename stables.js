@@ -67,7 +67,7 @@ if (horseName === "Galapagos" && isHorseInside !== false){
 
      let horseNames =  ["Galapagos", "Aguacate", "ElLoco"];
      let horseAges = [5, 6, 8];
-     let horseLocations = [true, false, false];
+    // let horseLocations = [true, false, false];
      console.log(horseNames.length);
      horseNames.push("Andres")
      console.log(horseNames);
@@ -86,4 +86,43 @@ if (horseName === "Galapagos" && isHorseInside !== false){
         if (isHorseInside === true ) 
             {console.log(`All the horses are currently inside, probably eating`)} 
         else{console.log("I have no idea where the horses are :(")}
+;
+//lesson-7 -- NO LAB FOR THIS WEEK
+let horseNicknames = ["Gus", "Aguita", "Elo"]; // check line 68 
+function logHorseNicknames(index) {
+    console.log(horseNames[index] + "'s nickname is " + horseNicknames[index]);
+}
+
+logHorseNicknames(0);
+logHorseNicknames(1);
+logHorseNicknames(2);
+
+//const STABLE_MONTHLY_FEE = 2560;  --LINE 15
+
+function payMe(rent, discount) {
+    if(discount) {
+         return rent - discount;}
+        else {
+         return rent;
+        }
+    }
+
+
+    console.log(payMe(STABLE_MONTHLY_FEE, 400))
     
+
+    let areHorsesInside = [ false, true, false];
+    function horseLocations(horse) {
+        if (areHorsesInside[horse]) {
+            return " is inside.";
+        }
+        return " is outside."
+    }
+    console.log(horseNames[0] + horseLocations(0));
+    console.log(horseNames[1] + horseLocations(1));
+    console.log(horseNames[2] + horseLocations(2));
+
+    let locationGalapagos = horseNames[0] + horseLocations(0);
+   
+    console.log(locationGalapagos)
+
