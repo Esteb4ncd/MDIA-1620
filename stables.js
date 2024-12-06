@@ -39,7 +39,7 @@ let numOfEmptyStalls = 12;
 
 //------------------------- First day -------------------------//
 
-function Horse(name,nickname, age, favTreat, isInside, rent, coatPattern, favSong) {
+function Horse(name,nickname, age, favTreat, isInside, rent, coatPattern, favSong, financialAidEligible) {
     this.name = name;
     this.nickname = nickname;
     this.age = age;
@@ -48,6 +48,7 @@ function Horse(name,nickname, age, favTreat, isInside, rent, coatPattern, favSon
     this.rent = rent;
     this.coatPattern = coatPattern;
     this.favSong = favSong;
+    this.financialAidEligible = financialAidEligible
     this.intro = function(){
         console.log(`This is ${name}. They are a ${coatPattern}, and they are ${age} years-old.`);
     }  
@@ -70,9 +71,9 @@ function Horse(name,nickname, age, favTreat, isInside, rent, coatPattern, favSon
 }
 
 
-const galapagos = new Horse("Galapagos", "Gala", 66, "cats", true, STABLE_MONTHLY_FEE, "Perlino", `"Like Him" by Tyler, The Creator...`);
-const elLoco = new Horse("ElLoco", "Elo", 98, "people", true, STABLE_MONTHLY_FEE, "Blue Roan", `"White Ferrari" by Frank Ocean`);
-const pendejo = new Horse("Pendejo", "Joe", 33, "rat poison", true, STABLE_MONTHLY_FEE, "Chocolate Palomino", `"Les" by Childish Gambino`);
+const galapagos = new Horse("Galapagos", "Gala", 66, "cats", true, STABLE_MONTHLY_FEE, "Perlino", `"Like Him" by Tyler, The Creator...`, false);
+const elLoco = new Horse("ElLoco", "Elo", 98, "people", true, STABLE_MONTHLY_FEE, "Blue Roan", `"White Ferrari" by Frank Ocean`, false);
+const pendejo = new Horse("Pendejo", "Joe", 33, "rat poison", true, STABLE_MONTHLY_FEE, "Chocolate Palomino", `"Les" by Childish Gambino`, false);
 horses.push(galapagos, elLoco, pendejo)
 
 var salem = {
@@ -242,7 +243,7 @@ function moveHorses (timeOfDay){
     if (timeOfDay === "dawn"){
         horses.forEach (horse => {
             if (horse.isInside === true){
-                !horse.isInside;
+                horse.isInside = false;
                 console.log(`${horse.name} has been taken outside to spend some time in the sun ☀️`)
             }
         });
@@ -274,13 +275,17 @@ horses.forEach( horse => {
     }
 })
 
+
 function feastTime (horses){
     console.log("It's feast time!! 🐈‍⬛ 🕴️ 🐀 ☠️ 👻")
-    for (let i = 0; i < 4; i++){
-        if (!horses[i].isInside){
-        horses.isInside = true;
+    for (let i = 0; i < horses.length; i++){
+        if (horses[i].isInside === false){
+        horses[i].isInside = true;
+        console.log(`${horses[i].nickname} is now inside`)
         }
         console.log(`${horses[i].nickname} is eating ${horses[i].favTreat}`)
     }
 }
-// Thank you.
+
+feastTime(horses)
+// Thank you :)
